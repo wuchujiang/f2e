@@ -1,0 +1,10 @@
+$inhertColor:#1d9d74;
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-,
+    -moz-,
+    -ms-,
+    -o-,
+    '' {
+        #{$prefix}#{$property}: $value;
+    }
+}
